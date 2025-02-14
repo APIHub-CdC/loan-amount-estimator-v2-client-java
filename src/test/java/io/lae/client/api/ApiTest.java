@@ -34,7 +34,7 @@ public class ApiTest {
 	@Before()
 	public void setUp() {
 		this.apiClient = api.getApiClient();
-		this.apiClient.setBasePath("https://services.circulodecredito.com.mx/v2/lae");
+		this.apiClient.setBasePath("URL");
 		OkHttpClient okHttpClient = new OkHttpClient().newBuilder()
 			    .readTimeout(30, TimeUnit.SECONDS)
 			    .addInterceptor(new SignerInterceptor())
